@@ -8,8 +8,8 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Textarea } from "@/components/ui/textarea"
 import { ArrowLeft, CheckCircle, Download, FileSpreadsheet, Save, Upload } from "lucide-react"
-import Link from "next/link"
 import { useState } from "react"
+import { Link } from "react-router"
 
 export default function DashboardPage() {
   const [step, setStep] = useState(1)
@@ -55,7 +55,7 @@ export default function DashboardPage() {
         heading="ExcelTranslator ダッシュボード"
         text="Excelファイルをアップロードして校正・翻訳を開始しましょう"
       >
-        <Link href="/">
+        <Link to="/">
           <Button variant="outline" size="sm" className="h-8 border-excel-300 text-excel-700 hover:bg-excel-50">
             <ArrowLeft className="mr-2 h-4 w-4" />
             ホームに戻る

@@ -41,3 +41,6 @@ touch src/main.tsx
 mv src/pages/pages.tsx src/pages/Home.tsx
 mv src/pages/dashboard/pages.tsx src/pages/dashboard/DashboardPage.tsx
 ```
+
+6. Replace Next's Link with React Router's Link
+
