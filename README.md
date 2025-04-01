@@ -32,6 +32,7 @@ mv app src/pages
 
 ```sh
 mv src/pages/layout.tsx src/App.tsx
+mv src/pages/global.css src/
 touch src/main.tsx
 ```
 
@@ -44,3 +45,12 @@ mv src/pages/dashboard/pages.tsx src/pages/dashboard/DashboardPage.tsx
 
 6. Replace Next's Link with React Router's Link
 
+Search `next/link` and replace it with 'react-router'.
+
+7. Install Vite
+
+```sh
+pnpm add -D vite @vitejs/plugin-react vite-tsconfig-paths
+touch index.html
+touch vite.config.ts
+```

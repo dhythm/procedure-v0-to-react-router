@@ -1,9 +1,9 @@
 "use client"
 
-import { useState } from "react"
-import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { FileSpreadsheet, Upload, CheckCircle, Languages } from "lucide-react"
+import { CheckCircle, FileSpreadsheet, Languages, Upload } from "lucide-react"
+import { useState } from "react"
+import { Link } from "react-router"
 
 export function HeroSection() {
   const [step, setStep] = useState(1)
@@ -38,12 +38,12 @@ export function HeroSection() {
               </p>
             </div>
             <div className="flex flex-col gap-2 sm:flex-row">
-              <Link href="/dashboard">
+              <Link to="/dashboard">
                 <Button size="lg" className="w-full sm:w-auto bg-excel-600 hover:bg-excel-700">
                   まずは無料で試してみる
                 </Button>
               </Link>
-              <Link href="#how-it-works">
+              <Link to="#how-it-works">
                 <Button
                   variant="outline"
                   size="lg"

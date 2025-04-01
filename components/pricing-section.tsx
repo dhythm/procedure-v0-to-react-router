@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Check } from "lucide-react"
-import Link from "next/link"
+import { Link } from "react-router"
 
 export function PricingSection() {
   const plans = [
@@ -93,7 +93,7 @@ export function PricingSection() {
                 </ul>
               </CardContent>
               <CardFooter className={plan.popular ? "bg-excel-50" : ""}>
-                <Link href="/dashboard" className="w-full">
+                <Link to="/dashboard" className="w-full">
                   <Button
                     className="w-full"
                     variant={plan.popular ? "default" : "outline"}
