@@ -34,3 +34,10 @@ mv app src/pages
 mv src/pages/layout.tsx src/App.tsx
 touch src/main.tsx
 ```
+
+5. Rename pages
+
+```sh
+mv src/pages/pages.tsx src/pages/Home.tsx
+mv src/pages/dashboard/pages.tsx src/pages/dashboard/DashboardPage.tsx
+```

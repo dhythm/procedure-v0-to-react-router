@@ -3,7 +3,7 @@ import {
   createBrowserRouter,
 } from 'react-router';
 import './globals.css';
-import Dashboard from './pages/Dashboard';
+import Dashboard from './pages/dashboard/DashboardPage';
 import Home from './pages/Home';
 
 const router = createBrowserRouter([

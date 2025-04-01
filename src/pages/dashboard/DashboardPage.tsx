@@ -1,15 +1,15 @@
 "use client"
 
-import { useState } from "react"
-import Link from "next/link"
+import { DashboardHeader } from "@/components/dashboard-header"
+import { DashboardShell } from "@/components/dashboard-shell"
+import { TranslationTable } from "@/components/translation-table"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Textarea } from "@/components/ui/textarea"
-import { FileSpreadsheet, Upload, CheckCircle, ArrowLeft, Save, Download } from "lucide-react"
-import { DashboardHeader } from "@/components/dashboard-header"
-import { DashboardShell } from "@/components/dashboard-shell"
-import { TranslationTable } from "@/components/translation-table"
+import { ArrowLeft, CheckCircle, Download, FileSpreadsheet, Save, Upload } from "lucide-react"
+import Link from "next/link"
+import { useState } from "react"
 
 export default function DashboardPage() {
   const [step, setStep] = useState(1)
