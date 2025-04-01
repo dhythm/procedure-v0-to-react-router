@@ -27,3 +27,10 @@ pnpm install react-router
 mkdir src
 mv app src/pages
 ```
+
+4. Create entry point
+
+```sh
+mv src/pages/layout.tsx src/App.tsx
+touch src/main.tsx
+```
