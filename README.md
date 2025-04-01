@@ -14,3 +14,16 @@ To simplify the code, it is better to convert to react-router.
 ```sh
 pnpm remove next
 ```
+
+2. Install react-router v7
+
+```sh
+pnpm install react-router
+```
+
+3. Rename app directory
+
+```sh
+mkdir src
+mv app src/pages
+```
